@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      .project {
+        background-color: #fffcf9;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .project .div {
+        background-color: #fffcf9;
+        width: 1280px;
+        height: 5550px;
+        position: relative;
+      }
+
+      .project .rectangle {
+        top: 118px;
+        position: absolute;
+        width: 1280px;
+        height: 40px;
+        left: 0;
+        background-color: #fffcf9;
+      }
+
+      .project .frame {
+        position: absolute;
+        width: 1280px;
+        height: 302px;
+        top: 158px;
+        left: 0;
+        background-color: #fffcf9;
+      }
+
+      .project .image {
+        position: absolute;
+        width: 588px;
+        height: 268px;
+        top: 19px;
+        left: 346px;
+        object-fit: cover;
+      }
+
+      .project .group {
+        position: absolute;
+        width: 1028px;
+        height: 108px;
+        top: 643px;
+        left: 132px;
+      }
+
+      .project .ROLE {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #adadad;
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: 37.5px;
+        white-space: nowrap;
+      }
+
+      .project .TIMELINE {
+        position: absolute;
+        top: 0;
+        left: 392px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #adadad;
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: 37.5px;
+        white-space: nowrap;
+      }
+
+      .project .TYPE {
+        position: absolute;
+        top: 0;
+        left: 854px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #adadad;
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: 37.5px;
+        white-space: nowrap;
+      }
+
+      .project .critical-analysis {
+        position: absolute;
+        top: 48px;
+        left: 0;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 30px;
+      }
+
+      .project .element-weeks-in-october {
+        position: absolute;
+        top: 25px;
+        left: 392px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 30px;
+        white-space: nowrap;
+      }
+
+      .project .text-wrapper {
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 30px;
+      }
+
+      .project .text-wrapper-2 {
+        position: absolute;
+        top: 48px;
+        left: 854px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 30px;
+        white-space: nowrap;
+      }
+
+      .project .p {
+        position: absolute;
+        top: 540px;
+        left: 132px;
+        font-family: "Raleway-ExtraBold", Helvetica;
+        font-weight: 800;
+        color: #000000;
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: 45px;
+        white-space: nowrap;
+      }
+
+      .project .line {
+        position: absolute;
+        width: 1016px;
+        height: 1px;
+        top: 800px;
+        left: 132px;
+        object-fit: cover;
+      }
+
+      .project .text-wrapper-3 {
+        position: absolute;
+        top: 1345px;
+        left: 135px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: 37.5px;
+        white-space: nowrap;
+      }
+
+      .project .text-wrapper-4 {
+        position: absolute;
+        top: 2789px;
+        left: 135px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: 37.5px;
+        white-space: nowrap;
+      }
+
+      .project .text-wrapper-5 {
+        position: absolute;
+        top: 3415px;
+        left: 135px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: 37.5px;
+        white-space: nowrap;
+      }
+
+      .project .text-wrapper-6 {
+        position: absolute;
+        top: 5074px;
+        left: 135px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: 37.5px;
+        white-space: nowrap;
+      }
+
+      .project .text-wrapper-7 {
+        position: absolute;
+        width: 1010px;
+        top: 5142px;
+        left: 135px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+      }
+
+      .project .text-wrapper-8 {
+        position: absolute;
+        width: 683px;
+        top: 2013px;
+        left: 135px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+      }
+
+      .project .img {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        top: 915px;
+        left: 848px;
+      }
+
+      .project .inconsistent-margins {
+        position: absolute;
+        width: 300px;
+        top: 2113px;
+        left: 135px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+      }
+
+      .project .lacks-ease-of {
+        position: absolute;
+        width: 300px;
+        top: 2113px;
+        left: 492px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+      }
+
+      .project .text-wrapper-9 {
+        position: absolute;
+        width: 281px;
+        top: 2070px;
+        left: 135px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #879c51;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+        white-space: nowrap;
+      }
+
+      .project .text-wrapper-10 {
+        position: absolute;
+        width: 199px;
+        top: 2070px;
+        left: 492px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #879c51;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+      }
+
+      .project .text-wrapper-11 {
+        position: absolute;
+        width: 316px;
+        top: 2070px;
+        left: 832px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #879c51;
+        font-size: 18px;
+        text-align: right;
+        letter-spacing: 0;
+        line-height: 27px;
+      }
+
+      .project .the-business-need {
+        position: absolute;
+        width: 300px;
+        top: 2113px;
+        left: 848px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+      }
+
+      .project .group-2 {
+        position: absolute;
+        width: 1013px;
+        height: 540px;
+        top: 1424px;
+        left: 135px;
+      }
+
+      .project .screenshot {
+        position: absolute;
+        width: 293px;
+        height: 327px;
+        top: 0;
+        left: 0;
+      }
+
+      .project .screenshot-2 {
+        position: absolute;
+        width: 198px;
+        height: 460px;
+        top: 0;
+        left: 310px;
+      }
+
+      .project .screenshot-3 {
+        position: absolute;
+        width: 238px;
+        height: 373px;
+        top: 0;
+        left: 525px;
+      }
+
+      .project .screenshot-4 {
+        position: absolute;
+        width: 233px;
+        height: 540px;
+        top: 0;
+        left: 780px;
+      }
+
+      .project .text-wrapper-12 {
+        top: 2643px;
+        left: 135px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        line-height: 27px;
+        white-space: nowrap;
+        position: absolute;
+        color: #000000;
+        font-size: 18px;
+        letter-spacing: 0;
+      }
+
+      .project .text-wrapper-13 {
+        position: absolute;
+        top: 2611px;
+        left: 135px;
+        font-family: "Raleway-SemiBoldItalic", Helvetica;
+        font-weight: 600;
+        font-style: italic;
+        color: #000000;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 24px;
+        white-space: nowrap;
+      }
+
+      .project .text-wrapper-14 {
+        position: absolute;
+        top: 2645px;
+        left: 161px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #8e8e8e;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 24px;
+        text-decoration: underline;
+        white-space: nowrap;
+      }
+
+      .project .frame-2 {
+        display: inline-flex;
+        align-items: center;
+        gap: 33px;
+        position: absolute;
+        top: 2947px;
+        left: 135px;
+      }
+
+      .project .wireframe {
+        position: relative;
+        width: 490px;
+        height: 349px;
+        object-fit: cover;
+      }
+
+      .project .text-wrapper-15 {
+        position: absolute;
+        width: 1013px;
+        top: 2852px;
+        left: 135px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+      }
+
+      .project .group-3 {
+        position: absolute;
+        width: 626px;
+        height: 325px;
+        top: 901px;
+        left: 135px;
+      }
+
+      .project .text-wrapper-16 {
+        position: absolute;
+        width: 475px;
+        top: 0;
+        left: 0;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: 37.5px;
+      }
+
+      .project .text-wrapper-17 {
+        position: absolute;
+        width: 616px;
+        top: 63px;
+        left: 0;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+      }
+
+      .project .text-wrapper-18 {
+        position: absolute;
+        top: 310px;
+        left: 26px;
+        font-family: "Inter-Regular", Helvetica;
+        font-weight: 400;
+        color: #8e8e8e;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: normal;
+        text-decoration: underline;
+        white-space: nowrap;
+      }
+
+      .project .text-wrapper-19 {
+        top: 307px;
+        left: 0;
+        font-family: "Inter-Regular", Helvetica;
+        font-weight: 400;
+        line-height: normal;
+        white-space: nowrap;
+        position: absolute;
+        color: #000000;
+        font-size: 18px;
+        letter-spacing: 0;
+      }
+
+      .project .text-wrapper-20 {
+        position: absolute;
+        top: 272px;
+        left: 0;
+        font-family: "Raleway-SemiBoldItalic", Helvetica;
+        font-weight: 600;
+        font-style: italic;
+        color: #000000;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 24px;
+        white-space: nowrap;
+      }
+
+      .project .group-4 {
+        position: absolute;
+        width: 1019px;
+        height: 82px;
+        top: 3494px;
+        left: 135px;
+      }
+
+      .project .text-wrapper-21 {
+        width: 17px;
+        top: 35px;
+        left: 0;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        line-height: 27px;
+        position: absolute;
+        color: #000000;
+        font-size: 18px;
+        letter-spacing: 0;
+      }
+
+      .project .https-www-figma-com {
+        position: absolute;
+        width: 988px;
+        top: 34px;
+        left: 25px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #8e8e8e;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 24px;
+        text-decoration: underline;
+      }
+
+      .project .text-wrapper-22 {
+        position: absolute;
+        width: 270px;
+        top: 0;
+        left: 0;
+        font-family: "Raleway-SemiBoldItalic", Helvetica;
+        font-weight: 600;
+        font-style: italic;
+        color: #000000;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 24px;
+      }
+
+      .project .group-5 {
+        position: absolute;
+        width: 1013px;
+        height: 726px;
+        top: 3636px;
+        left: 135px;
+      }
+
+      .project .macbook-air {
+        position: absolute;
+        width: 238px;
+        height: 461px;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+      }
+
+      .project .macbook-air-2 {
+        position: absolute;
+        width: 238px;
+        height: 619px;
+        top: 0;
+        left: 517px;
+        object-fit: cover;
+      }
+
+      .project .macbook-air-3 {
+        position: absolute;
+        width: 238px;
+        height: 726px;
+        top: 0;
+        left: 775px;
+        object-fit: cover;
+      }
+
+      .project .macbook-air-4 {
+        position: absolute;
+        width: 238px;
+        height: 531px;
+        top: 0;
+        left: 258px;
+        object-fit: cover;
+      }
+
+      .project .group-6 {
+        position: absolute;
+        width: 1024px;
+        height: 533px;
+        top: 4422px;
+        left: 135px;
+      }
+
+      .project .text-wrapper-23 {
+        position: absolute;
+        width: 261px;
+        top: 0;
+        left: 0;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #879c51;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+      }
+
+      .project .text-wrapper-24 {
+        position: absolute;
+        width: 300px;
+        top: 47px;
+        left: 0;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+      }
+
+      .project .text-wrapper-25 {
+        position: absolute;
+        width: 267px;
+        top: 0;
+        left: 357px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #879c51;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+        white-space: nowrap;
+      }
+
+      .project .text-wrapper-26 {
+        position: absolute;
+        width: 300px;
+        top: 47px;
+        left: 357px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+      }
+
+      .project .text-wrapper-27 {
+        position: absolute;
+        top: 0;
+        left: 714px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #879c51;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+        white-space: nowrap;
+      }
+
+      .project .text-wrapper-28 {
+        position: absolute;
+        width: 298px;
+        top: 47px;
+        left: 714px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+      }
+
+      .project .rectangle-2 {
+        top: 0;
+        position: absolute;
+        width: 1280px;
+        height: 40px;
+        left: 0;
+        background-color: #fffcf9;
+      }
+
+      .project .navbar-logo-left {
+        position: absolute;
+        width: 1280px;
+        height: 78px;
+        top: 40px;
+        left: 0;
+        background-color: #fffcf9;
+        overflow-y: scroll;
+      }
+
+      .project .frame-wrapper {
+        position: absolute;
+        width: 311px;
+        height: 27px;
+        top: 25px;
+        left: 488px;
+      }
+
+      .project .frame-3 {
+        display: inline-flex;
+        align-items: center;
+        gap: 50px;
+        position: relative;
+      }
+
+      .project .text-wrapper-30 {
+        position: relative;
+        width: 88px;
+        margin-top: -1.00px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #adadad;
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 27px;
+      }
+
+      .project .text-wrapper-31 {
+        position: relative;
+        width: fit-content;
+        margin-top: -1.00px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #adadad;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+        white-space: nowrap;
+      }
+
+      .project .contact {
+        position: relative;
+        width: fit-content;
+        margin-top: -1.00px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #adadad;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+        text-decoration: underline;
+        white-space: nowrap;
+      }
+
+      .project .navbar-brand {
+        position: absolute;
+        width: 300px;
+        height: 0px;
+        top: 39px;
+        left: 132px;
+        border: 1.5px solid;
+        border-color: #adadad;
+      }
+
+      .project .navbar-brand-2 {
+        position: absolute;
+        width: 300px;
+        height: 0px;
+        top: 39px;
+        left: 848px;
+        border: 1.5px solid;
+        border-color: #adadad;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="project">
+      <div class="div">
+        <!--landing section-->
+        <div class="rectangle"></div>
+        <div class="frame"><img class="image" src="landing img.png" /></div>
+        <div class="group">
+          <div class="ROLE">Role</div>
+          <div class="TIMELINE">Timeline</div>
+          <div class="TYPE">Type</div>
+          <div class="critical-analysis">Critical Analysis<br />Website Design</div>
+          <p class="element-weeks-in-october">
+            <span class="text-wrapper">2 </span> <span class="text-wrapper">weeks in October, 2024</span>
+          </p>
+          <div class="text-wrapper-2">Individual Project</div>
+        </div>
+        <p class="p">Website Redesign for Golden Acres Farm</p>
+        <div class="text-wrapper-3">Original Website Critical Analysis</div>
+        <div class="text-wrapper-4">Sitemaps</div>
+        <div class="text-wrapper-5">High-Fidelity Mockups</div>
+        <div class="text-wrapper-6">Key Takeaways</div>
+        <p class="text-wrapper-7">
+          During the redesign process, I realized that many of my design decisions were influenced by my own browsing
+          habits, which can differ significantly from those of other users. This highlighted the importance of usability
+          testing to ensure that anyone visiting the website can easily find the information they need without
+          assistance. I also observed that establishing a strong brand presence is essential, particularly for websites
+          focused on showcasing a company’s identity. The original website lacked engagement, largely because the brand
+          was not distinct and the navigation was unintuitive. Through this project, I learned that a well-structured
+          website depends heavily on effective navigation and clear, intuitive content presentation, which are areas I
+          plan to continue refining.
+        </p>
+        <p class="text-wrapper-8">
+          For an in-depth analysis of the website, it is being evaluated in 3 main categories:
+        </p>
+        <img class="img" src="farm name.png" />
+        <p class="inconsistent-margins">
+          Inconsistent margins create a distracting layout, with under-utilized empty space making desktop browsing
+          inefficient<br />Titles and subtitles appear unprofessional, with poor contrast between text and background<br />Page
+          tabs have awkward spacing—too close to images and distant from other tabs<br />Typography is inconsistent
+          across pages (e.g., font type, size, alignment)<br />Contact page has out-of-frame boxes and unreadable text
+          colours.
+        </p>
+        <p class="lacks-ease-of">
+          Lacks ease of navigation, switching between pages while scrolling is difficult<br />Poor user flow in webpage
+          organization<br />Awkward search bar placement on the right column<br />Commenting is restricted to platform
+          users, limiting interaction<br />Broken links appear at the bottom of each webpage
+        </p>
+        <div class="text-wrapper-9">Visual Design and Aesthetics</div>
+        <div class="text-wrapper-10">Website Usability</div>
+        <div class="text-wrapper-11">Content Quality and Communication</div>
+        <p class="the-business-need">
+          The business need for the Garlic Catalogue page as a purchasing channel is unclear and underemphasized.<br />The
+          website mixes technical and conversational language inconsistently.<br />The Garlic Catalogue page, a key
+          section, lacks organized information and proper line spacing.<br />The website structure does not effectively
+          convey its purpose.
+        </p>
+        <div class="group-2">
+          <img class="screenshot" src="original1.png" />
+          <img class="screenshot-2" src="original2.png" />
+          <img class="screenshot-3" src="original3.png" />
+          <img class="screenshot-4" src="original4.png" />
+        </div>
+        <div class="text-wrapper-12">🔗</div>
+        <p class="text-wrapper-13">
+          Link to my full critical analysis video with mouse tracking and voice over explanation:
+        </p>
+        <div class="text-wrapper-14"><a href="https://drive.google.com/file/d/1T7ZcHyZYKH6XtxeRCpMLyB0uhdVKTsqZ/view" target="_blank" rel="noopener noreferrer">https://drive.google.com/file/d/1T7ZcHyZYKH6XtxeRCpMLyB0uhdVKTsqZ/view</a></div>
+        <div class="frame-2">
+          <img class="wireframe" src="sitemap1.png" /> <img class="wireframe" src="sitemap2.png" />
+        </div>
+        <p class="text-wrapper-15">
+          With the critiques in mind, I developed a sitemap for the original website and the redesign version to show
+          the site structure and navigation hierarchy.
+        </p>
+        <div class="group-3">
+          <div class="text-wrapper-16">Overview</div>
+          <p class="text-wrapper-17">
+            This project was part of an assignment to redesign an existing Canadian business or organization website
+            that is poorly designed (with 6–10 pages of content). The learning goals were to identify areas for
+            improvement, strengthen critical analysis skills, and apply visual design principles to create
+            comprehensive, refreshed mockups for the website. I have chosen to work with the Golden Acres Farm located
+            in Perth East, ON.
+          </p>
+          <div class="text-wrapper-18">
+            <a href="https://goldenacresgarlic.blogspot.com/" target="_blank" rel="noopener noreferrer">
+              https://goldenacresgarlic.blogspot.com/
+            </a>
+          </div>
+          <div class="text-wrapper-19">🔗</div>
+          <p class="text-wrapper-20">Link to the original website:</p>
+        </div>
+        <div class="group-4">
+          <div class="text-wrapper-21">🔗</div>
+          <div class="https-www-figma-com"><a href="https://www.figma.com/proto/dwlrnEzntqFfOkzGKNNV70/GBDA228%3A-Assignment-2?page-id=25%3A2&node-id=25-5&node-type=canvas&viewport=268%2C211%2C0.18&t=lArFiJk7HF5S7A56-1&scaling=min-zoom&content-scaling=fixed" target="_blank" rel="noopener noreferrer">
+            https://www.figma.com/proto/dwlrnEzntqFfOkzGKNNV70/GBDA228%3A-Assignment-2?page-id=25%3A2&amp;node-id=25-5&amp;node-type=canvas&amp;viewport=268%2C211%2C0.18&amp;t=lArFiJk7HF5S7A56-1&amp;scaling=min-zoom&amp;content-scaling=fixed</a>
+          </div>
+          <p class="text-wrapper-22">Link to the interactive prototype:</p>
+        </div>
+        <div class="group-5">
+          <img class="macbook-air" src="revised1.png" />
+          <img class="macbook-air-2" src="revised2.png" />
+          <img class="macbook-air-3" src="revised3.png" />
+          <img class="macbook-air-4" src="revised4.png" />
+        </div>
+        <div class="group-6">
+          <div class="text-wrapper-23">Visual Design Enhancements</div>
+          <p class="text-wrapper-24">
+            The website’s visual design was changed completely for better consistency and appeal. Key elements—such as
+            typography, colour, and layout—were redesigned to improve readability and reinforce branding. Similar
+            elements are grouped together following the principle of proximity, making content easier to scan and
+            interact with. The colour palette of brown, green, and ivory represents the natural tones of garlic while
+            also providing high contrast for readability. By using a consistent grid layout, users can gain familiarity
+            across different pages.
+          </p>
+          <div class="text-wrapper-25">Usability Improvements</div>
+          <p class="text-wrapper-26">
+            The redesigned website groups related pages for intuitive access, enhancing navigation hierarchy and making
+            it easier for users to find information. The webpage order was also reorganized by importance, the About
+            page now introduces Golden Acres Farm upfront, helping users quickly understand the farm’s story and
+            purpose. The Product page follows, reflecting the business’s primary focus. To make navigation more
+            convenient, I implemented fixed navigation tabs that stay visible as users scroll through the current page,
+            ensuring easy access to each webpage at all times.
+          </p>
+          <div class="text-wrapper-27">Content Rearrangement</div>
+          <p class="text-wrapper-28">
+            Information was kept the same but rearranged and simplified to deliver a more user-friendly experience. Page
+            tabs were renamed for conciseness, and buttons are now labeled clearly with their purposes. Products are
+            categorized by garlic types and varieties, helping users quickly find specific items. I also added a footer
+            featuring quick access to contact information, hours, location details, and a subscription form. This
+            ensures users can easily find essential information from any page, providing a more seamless and accessible
+            experience.
+          </p>
+        </div>
+        <div class="rectangle-2"></div>
+        <div class="navbar-logo-left">
+          <div class="frame-wrapper">
+            <div class="frame-3">
+              <a href="https://casey-syx.github.io/Shen_Casey_a3/" class="text-wrapper-30">Projects</a>
+              <a href="https://casey-syx.github.io/about/" class="text-wrapper-31">About</a>
+              <a href="https://drive.google.com/file/d/1TAWB7Vy6SAjhWK837kHkPMTjnkCfBxo-/view?usp=drive_link" class="contact">Resume</a>
+            </div>
+          </div>
+          <div class="navbar-brand"></div>
+          <div class="navbar-brand-2"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
