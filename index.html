@@ -1,676 +1,676 @@
 <!DOCTYPE html>
 <html lang="en-ca">
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <style>
-    .project {
-    background-color: #fffcf9;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    with:100%;
-    }
-    
-    .project .div {
-    background-color: #fffcf9;
-    width: 1280px;
-    height: 4280px;
-    position: relative;
-    }
-    
-    .project .rectangle {
-    top: 0;
-    position: absolute;
-    width: 1280px;
-    height:40px;
-    left: 0;
-    background-color: #fffcf9;
-    }
-    
-    .project .rectangle-2 {
-    top: 118px;
-    position: absolute;
-    width: 1280px;
-    height: 40px;
-    left: 0;
-    background-color: #fffcf9;
-    }
-    
-    .project .navbar-logo-left {
-    position: absolute;
-    width: 1280px;
-    height: 78px;
-    top: 40px;
-    left: 0;
-    background-color: #fffcf9;
-    }
-    
-    .project .group {
-    position:absolute;
-    width: 311px;
-    height:27px;
-    top:25px;
-    left:488px;
-    }
-    
-    .project .frame {
-    display: inline-flex;
-    align-items: center;
-    gap: 50px;
-    position: relative;
-    }
-    
-    .project .text-wrapper {
-    position: relative;
-    width: 88px;
-    margin-top: -1.00px;
-    font-family: "Raleway-Bold", Helvetica;
-    font-weight: 700;
-    color: #adadad;
-    font-size: 18px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 27px;
-    }
-    
-    .project .text-wrapper-2 {
-    position: relative;
-    width: fit-content;
-    margin-top: -1.00px;
-    font-family: "Raleway-Bold", Helvetica;
-    font-weight: 700;
-    color: #adadad;
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: 27px;
-    white-space: nowrap;
-    }
-    
-    .project .contact {
-    position: relative;
-    width: fit-content;
-    margin-top: -1.00px;
-    font-family: "Raleway-Bold", Helvetica;
-    font-weight: 700;
-    color: #adadad;
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: 27px;
-    text-decoration: underline;
-    white-space: nowrap;
-    }
-    
-    .project .navbar-brand {
-    position: absolute;
-    width: 300px;
-    height: 1px;
-    top: 39px;
-    left: 132px;
-    border: 1px solid;
-    border-color: #adadad;
-    }
-    
-    .project .navbar-brand-2 {
-    position: absolute;
-    width: 300px;
-    height: 1px;
-    top: 39px;
-    left: 848px;
-    border: 1px solid;
-    border-color: #adadad;
-    }
-    
-    .project .image-wrapper {
-    position: absolute;
-    width: 1280px;
-    height: 302px;
-    top: 158px;
-    left: 0;
-    background-color: #fffcf9;
-    }
-    
-    .project .image {
-    position: absolute;
-    width: 580px;
-    height: 260px;
-    top: 21px;
-    left: 350px;
-    object-fit: cover;
-    }
-    
-    .project .group-2 {
-    position: absolute;
-    width: 1028px;
-    height: 108px;
-    top: 643px;
-    left: 132px;
-    }
-    
-    .project .ROLE {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-family: "Raleway-Bold", Helvetica;
-    font-weight: 700;
-    color: #adadad;
-    font-size: 25px;
-    letter-spacing: 0;
-    line-height: 37.5px;
-    white-space: nowrap;
-    }
-    
-    .project .TIMELINE {
-    position: absolute;
-    top: 0;
-    left: 378px;
-    font-family: "Raleway-Bold", Helvetica;
-    font-weight: 700;
-    color: #adadad;
-    font-size: 25px;
-    letter-spacing: 0;
-    line-height: 37.5px;
-    white-space: nowrap;
-    }
-    
-    .project .TYPE {
-    position: absolute;
-    top: 0;
-    left: 810px;
-    font-family: "Raleway-Bold", Helvetica;
-    font-weight: 700;
-    color: #adadad;
-    font-size: 25px;
-    letter-spacing: 0;
-    line-height: 37.5px;
-    white-space: nowrap;
-    }
-    
-    .project .brand-design {
-    position: absolute;
-    top: 48px;
-    left: 0;
-    font-family: "Raleway-Bold", Helvetica;
-    font-weight: 500;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 30px;
-    }
-    
-    .project .november-april {
-    position: absolute;
-    top: 48px;
-    left: 378px;
-    font-family: "Raleway-Bold", Helvetica;
-    font-weight: 500;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 30px;
-    }
-    
-    .project. span {
-    font-family: "Raleway-Bold", Helvetica;
-    font-weight: 500;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 30px;
-    }
-    
-    .project .text-wrapper-3 {
-    position: absolute;
-    top: 48px;
-    left: 810px;
-    font-family: "Raleway-Bold", Helvetica;
-    font-weight: 500;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 30px;
-    white-space: nowrap;
-    }
-    
-    .project .p {
-    position: absolute;
-    top: 540px;
-    left: 132px;
-    font-family: "Raleway-ExtraBold", Helvetica;
-    font-weight: 800;
-    color: #000000;
-    font-size: 30px;
-    letter-spacing: 0;
-    line-height: 45px;
-    white-space: nowrap;
-    }
-    
-    .project .line {
-    position: absolute;
-    width: 1016px;
-    height: 1px;
-    top: 800px;
-    left: 132px;
-    object-fit: cover;
-    }
-    
-     .project .img {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    top: 901px;
-    left: 848px;
-    object-fit: cover;
-    }
-    
-    .project .text-wrapper-4 {
-    position: absolute;
-    width: 257px;
-    top: 1320px;
-    left: 132px;
-    font-family: "Raleway-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 25px;
-    letter-spacing: 0;
-    line-height: 37.5px;
-    }
-    
-    .project .text-wrapper-5 {
-    position: absolute;
-    width: 458px;
-    top: 2640px;
-    left: 132px;
-    font-family: "Raleway-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 25px;
-    letter-spacing: 0;
-    line-height: 37.5px;
-    }
-    
-    .project .text-wrapper-6 {
-    position: absolute;
-    width: 442px;
-    top: 3427px;
-    left: 132px;
-    font-family: "Raleway-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 25px;
-    letter-spacing: 0;
-    line-height: 37.5px;
-    }
-    
-    .project .group-3 {
-    position: absolute;
-    width: 618px;
-    height: 239px;
-    top: 931px;
-    left: 132px;
-    }
-    
-    .project .polar-art-studio-is {
-    position: absolute;
-    width: 616px;
-    top: 131px;
-    left: 0;
-    font-family: "Raleway-Medium", Helvetica;
-    font-weight: 500;
-    color: #000000;
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: 27px;
-    }
-    
-    .project .text-wrapper-7 {
-    text-decoration: underline;
-    }
-    
-    .project .text-wrapper-8 {
-    font-family: "Raleway-Medium", Helvetica;
-    font-weight: 500;
-    color: #000000;
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: 27px;
-    }
-    
-    .project .image-2 {
-    width: 127px;
-    height: 96px;
-    top: 0;
-    left:0;
-    position: absolute;
-    object-fit: cover;
-    }
-    
-    .project .text-wrapper-9 {
-    position: absolute;
-    width: 1016px;
-    top: 1383px;
-    left: 132px;
-    font-family: "Raleway-Medium", Helvetica;
-    font-weight: 500;
-    color: #000000;
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: 27px;
-    }
-    
-    .project .for-our-mother {
-    position: absolute;
-    width: 1016px;
-    top: 2703px;
-    left: 132px;
-    font-family: "Raleway-Medium", Helvetica;
-    font-weight: 500;
-    color: #000000;
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: 27px;
-    }
-    
-    .project .balancing-visual {
-    position: absolute;
-    width: 1016px;
-    top: 3495px;
-    left: 132px;
-    font-family: "Raleway-Bold", Helvetica;
-    font-weight: 400;
-    color: transparent;
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: 18px;
-    }
-    
-    .project .text-wrapper-10 {
-    font-weight: 700;
-    color: #79bfff;
-    line-height: 28px;
-    }
-    
-    .project .text-wrapper-11 {
-    font-weight: 700;
-    color: #79bfff;
-    line-height: 35px;
-    }
-    
-    .project .text-wrapper-12 {
-    font-family: "Raleway-Medium", Helvetica;
-    font-weight: 500;
-    color: #000000;
-    line-height: 35px;
-    }
-    
-    .project .text-wrapper-13 {
-    font-family: "Raleway-Medium", Helvetica;
-    font-weight: 500;
-    color: #000000;
-    line-height: 28px;
-    }
-    
-    .project .element {
-    left: 132px;
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    top: 1579px;
-    object-fit: cover;
-    }
-    
-    .project .element-2 {
-    left: 848px;
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    top: 1579px;
-    object-fit: cover;
-    }
-    
-    .project .element-3 {
-    left: 848px;
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    top: 2085px;
-    object-fit: cover;
-    }
-    
-    .project .birthday-party {
-    left: 132px;
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    top: 2085px;
-    object-fit: cover;
-    }
-    
-    .project .element-4 {
-    left: 490px;
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    top: 1579px;
-    object-fit: cover;
-    }
-    
-    .project .text-wrapper-14 {
-    position: absolute;
-    width: 259px;
-    height: 24px;
-    top: 1990px;
-    left: 510px;
-    font-family: "Raleway-Medium", Helvetica;
-    font-weight: 500;
-    color: #adadad;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: 24px;
-    }
-    
-    .project .text-wrapper-15 {
-    position: absolute;
-    width: 198px;
-    height: 24px;
-    top: 2496px;
-    left: 541px;
-    font-family: "Raleway-Medium", Helvetica;
-    font-weight: 500;
-    color: #adadad;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: 24px;
-    }
-    
-    .project .text-wrapper-16 {
-    position: absolute;
-    width: 288px;
-    height: 24px;
-    top: 3283px;
-    left: 496px;
-    font-family: "Raleway-Medium", Helvetica;
-    font-weight: 500;
-    color: #adadad;
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 24px;
-    }
-    
-    .project .volunteer-poster {
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    top: 2085px;
-    left: 490px;
-    }
-    
-    .project .text-wrapper-17 {
-    position: absolute;
-    width: 197px;
-    height: 24px;
-    top: 1990px;
-    left: 186px;
-    font-family: "Raleway-Medium", Helvetica;
-    font-weight: 500;
-    color: #adadad;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: 24px;
-    }
-    
-    .project .text-wrapper-18 {
-    position: absolute;
-    width: 219px;
-    height: 24px;
-    top: 2496px;
-    left: 172px;
-    font-family: "Raleway-Medium", Helvetica;
-    font-weight: 500;
-    color: #adadad;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: 24px;
-    }
-    
-    .project .text-wrapper-19 {
-    position: absolute;
-    width: 213px;
-    height: 24px;
-    top: 1990px;
-    left: 894px;
-    font-family: "Raleway-Medium", Helvetica;
-    font-weight: 500;
-    color: #adadad;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: 24px;
-    }
-    
-    .project .text-wrapper-20 {
-    position: absolute;
-    width: 256px;
-    height: 24px;
-    top: 2496px;
-    left: 870px;
-    font-family: "Raleway-Medium", Helvetica;
-    font-weight: 500;
-    color: #adadad;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: 24px;
-    }
-    
-    .project .group-4 {
-    position: absolute;
-    width: 1016px;
-    height: 400px;
-    top: 2872px;
-    left: 132px;
-    }
-    
-    .project .element-5 {
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    }
-    
-    .project .element-6 {
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    top: 0;
-    left: 358px;
-    object-fit: cover;
-    }
-    
-    .project .element-7 {
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    top: 0;
-    left: 716px;
-    object-fit: cover;
-    }
-    
-    .project .group-5 {
-    position: absolute;
-    width: 167px;
-    height: 30px;
-    top: 4123px;
-    left: 983px;
-    }
-    
-    .project .text-wrapper-21 {
-    position: absolute;
-    top: 2px;
-    left: 0;
-    font-family: "Raleway-SemiBold", Helvetica;
-    font-weight: 600;
-    color: #adadad;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 28px;
-    white-space: nowrap;
-    }
-    
-    .project .arrow-upward {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 0;
-    left: 135px;
-    }
-    
-    .project .overlap-group-wrapper {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    top: 118px;
-    left: 132px;
-    transform: rotate(-180.00deg);
-    box-shadow: 0px 4px 8px #00000040;
-    }
-    
-    .project .overlap-group {
-    position: relative;
-    height: 60px;
-    border-radius: 30px;
-    }
-    
-    .project .vector {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 0;
-    left: 0;
-    background-color: #ffffff;
-    border-radius: 30px;
-    transform: rotate(180.00deg);
-    }
-    
-    .project .vector-2 {
-    width: 14px;
-    height: 23px;
-    top: 18px;
-    left: 29px;
-    position: absolute;
-    transform: rotate(180.00deg);
-    }
-    
-     .project .vector-3 {
-    width: 26px;
-    height: 3px;
-    top: 28px;
-    left: 15px;
-    position: absolute;
-    transform: rotate(180.00deg);
-    }
+      .project {
+        background-color: #fffcf9;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        with: 100%;
+      }
+
+      .project .div {
+        background-color: #fffcf9;
+        width: 1280px;
+        height: 4280px;
+        position: relative;
+      }
+
+      .project .rectangle {
+        top: 0;
+        position: absolute;
+        width: 1280px;
+        height: 40px;
+        left: 0;
+        background-color: #fffcf9;
+      }
+
+      .project .rectangle-2 {
+        top: 118px;
+        position: absolute;
+        width: 1280px;
+        height: 40px;
+        left: 0;
+        background-color: #fffcf9;
+      }
+
+      .project .navbar-logo-left {
+        position: absolute;
+        width: 1280px;
+        height: 78px;
+        top: 40px;
+        left: 0;
+        background-color: #fffcf9;
+      }
+
+      .project .group {
+        position: absolute;
+        width: 311px;
+        height: 27px;
+        top: 25px;
+        left: 488px;
+      }
+
+      .project .frame {
+        display: inline-flex;
+        align-items: center;
+        gap: 50px;
+        position: relative;
+      }
+
+      .project .text-wrapper {
+        position: relative;
+        width: 88px;
+        margin-top: -1.00px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #adadad;
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 27px;
+      }
+
+      .project .text-wrapper-2 {
+        position: relative;
+        width: fit-content;
+        margin-top: -1.00px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #adadad;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+        white-space: nowrap;
+      }
+
+      .project .contact {
+        position: relative;
+        width: fit-content;
+        margin-top: -1.00px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #adadad;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+        text-decoration: underline;
+        white-space: nowrap;
+      }
+
+      .project .navbar-brand {
+        position: absolute;
+        width: 300px;
+        height: 0px;
+        top: 39px;
+        left: 132px;
+        border: 1.5px solid;
+        border-color: #adadad;
+      }
+
+      .project .navbar-brand-2 {
+        position: absolute;
+        width: 300px;
+        height: 0px;
+        top: 39px;
+        left: 848px;
+        border: 1.5px solid;
+        border-color: #adadad;
+      }
+
+      .project .image-wrapper {
+        position: absolute;
+        width: 1280px;
+        height: 302px;
+        top: 158px;
+        left: 0;
+        background-color: #fffcf9;
+      }
+
+      .project .image {
+        position: absolute;
+        width: 580px;
+        height: 260px;
+        top: 21px;
+        left: 350px;
+        object-fit: cover;
+      }
+
+      .project .group-2 {
+        position: absolute;
+        width: 1028px;
+        height: 108px;
+        top: 643px;
+        left: 132px;
+      }
+
+      .project .ROLE {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #adadad;
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: 37.5px;
+        white-space: nowrap;
+      }
+
+      .project .TIMELINE {
+        position: absolute;
+        top: 0;
+        left: 378px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #adadad;
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: 37.5px;
+        white-space: nowrap;
+      }
+
+      .project .TYPE {
+        position: absolute;
+        top: 0;
+        left: 810px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #adadad;
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: 37.5px;
+        white-space: nowrap;
+      }
+
+      .project .brand-design {
+        position: absolute;
+        top: 48px;
+        left: 0;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 30px;
+      }
+
+      .project .november-april {
+        position: absolute;
+        top: 48px;
+        left: 378px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 30px;
+      }
+
+      .project. span {
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 30px;
+      }
+
+      .project .text-wrapper-3 {
+        position: absolute;
+        top: 48px;
+        left: 810px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 30px;
+        white-space: nowrap;
+      }
+
+      .project .p {
+        position: absolute;
+        top: 540px;
+        left: 132px;
+        font-family: "Raleway-ExtraBold", Helvetica;
+        font-weight: 800;
+        color: #000000;
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: 45px;
+        white-space: nowrap;
+      }
+
+      .project .line {
+        position: absolute;
+        width: 1016px;
+        height: 1px;
+        top: 800px;
+        left: 132px;
+        object-fit: cover;
+      }
+
+      .project .img {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        top: 901px;
+        left: 848px;
+        object-fit: cover;
+      }
+
+      .project .text-wrapper-4 {
+        position: absolute;
+        width: 257px;
+        top: 1320px;
+        left: 132px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: 37.5px;
+      }
+
+      .project .text-wrapper-5 {
+        position: absolute;
+        width: 458px;
+        top: 2640px;
+        left: 132px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: 37.5px;
+      }
+
+      .project .text-wrapper-6 {
+        position: absolute;
+        width: 442px;
+        top: 3427px;
+        left: 132px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: 37.5px;
+      }
+
+      .project .group-3 {
+        position: absolute;
+        width: 618px;
+        height: 239px;
+        top: 931px;
+        left: 132px;
+      }
+
+      .project .polar-art-studio-is {
+        position: absolute;
+        width: 616px;
+        top: 131px;
+        left: 0;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+      }
+
+      .project .text-wrapper-7 {
+        text-decoration: underline;
+      }
+
+      .project .text-wrapper-8 {
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+      }
+
+      .project .image-2 {
+        width: 127px;
+        height: 96px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+      }
+
+      .project .text-wrapper-9 {
+        position: absolute;
+        width: 1016px;
+        top: 1383px;
+        left: 132px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+      }
+
+      .project .for-our-mother {
+        position: absolute;
+        width: 1016px;
+        top: 2703px;
+        left: 132px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 27px;
+      }
+
+      .project .balancing-visual {
+        position: absolute;
+        width: 1016px;
+        top: 3495px;
+        left: 132px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 400;
+        color: transparent;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 18px;
+      }
+
+      .project .text-wrapper-10 {
+        font-weight: 700;
+        color: #79bfff;
+        line-height: 28px;
+      }
+
+      .project .text-wrapper-11 {
+        font-weight: 700;
+        color: #79bfff;
+        line-height: 35px;
+      }
+
+      .project .text-wrapper-12 {
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        line-height: 35px;
+      }
+
+      .project .text-wrapper-13 {
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        line-height: 28px;
+      }
+
+      .project .element {
+        left: 132px;
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        top: 1579px;
+        object-fit: cover;
+      }
+
+      .project .element-2 {
+        left: 848px;
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        top: 1579px;
+        object-fit: cover;
+      }
+
+      .project .element-3 {
+        left: 848px;
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        top: 2085px;
+        object-fit: cover;
+      }
+
+      .project .birthday-party {
+        left: 132px;
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        top: 2085px;
+        object-fit: cover;
+      }
+
+      .project .element-4 {
+        left: 490px;
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        top: 1579px;
+        object-fit: cover;
+      }
+
+      .project .text-wrapper-14 {
+        position: absolute;
+        width: 259px;
+        height: 24px;
+        top: 1990px;
+        left: 510px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #adadad;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 24px;
+      }
+
+      .project .text-wrapper-15 {
+        position: absolute;
+        width: 198px;
+        height: 24px;
+        top: 2496px;
+        left: 541px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #adadad;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 24px;
+      }
+
+      .project .text-wrapper-16 {
+        position: absolute;
+        width: 288px;
+        height: 24px;
+        top: 3283px;
+        left: 496px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #adadad;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 24px;
+      }
+
+      .project .volunteer-poster {
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        top: 2085px;
+        left: 490px;
+      }
+
+      .project .text-wrapper-17 {
+        position: absolute;
+        width: 197px;
+        height: 24px;
+        top: 1990px;
+        left: 186px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #adadad;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 24px;
+      }
+
+      .project .text-wrapper-18 {
+        position: absolute;
+        width: 219px;
+        height: 24px;
+        top: 2496px;
+        left: 172px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #adadad;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 24px;
+      }
+
+      .project .text-wrapper-19 {
+        position: absolute;
+        width: 213px;
+        height: 24px;
+        top: 1990px;
+        left: 894px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #adadad;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 24px;
+      }
+
+      .project .text-wrapper-20 {
+        position: absolute;
+        width: 256px;
+        height: 24px;
+        top: 2496px;
+        left: 870px;
+        font-family: "Raleway-Medium", Helvetica;
+        font-weight: 500;
+        color: #adadad;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 24px;
+      }
+
+      .project .group-4 {
+        position: absolute;
+        width: 1016px;
+        height: 400px;
+        top: 2872px;
+        left: 132px;
+      }
+
+      .project .element-5 {
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+      }
+
+      .project .element-6 {
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        top: 0;
+        left: 358px;
+        object-fit: cover;
+      }
+
+      .project .element-7 {
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        top: 0;
+        left: 716px;
+        object-fit: cover;
+      }
+
+      .project .group-5 {
+        position: absolute;
+        width: 167px;
+        height: 30px;
+        top: 4123px;
+        left: 983px;
+      }
+
+      .project .text-wrapper-21 {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        font-family: "Raleway-SemiBold", Helvetica;
+        font-weight: 600;
+        color: #adadad;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 28px;
+        white-space: nowrap;
+      }
+
+      .project .arrow-upward {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 0;
+        left: 135px;
+      }
+
+      .project .overlap-group-wrapper {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        top: 118px;
+        left: 132px;
+        transform: rotate(-180.00deg);
+        box-shadow: 0px 4px 8px #00000040;
+      }
+
+      .project .overlap-group {
+        position: relative;
+        height: 60px;
+        border-radius: 30px;
+      }
+
+      .project .vector {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        border-radius: 30px;
+        transform: rotate(180.00deg);
+      }
+
+      .project .vector-2 {
+        width: 14px;
+        height: 23px;
+        top: 18px;
+        left: 29px;
+        position: absolute;
+        transform: rotate(180.00deg);
+      }
+
+      .project .vector-3 {
+        width: 26px;
+        height: 3px;
+        top: 28px;
+        left: 15px;
+        position: absolute;
+        transform: rotate(180.00deg);
+      }
     </style>
-    
+
   </head>
   <body>
     <div class="project">
@@ -707,14 +707,11 @@
         <div class="text-wrapper-6">Key Takeaways</div>
         <div class="group-3">
           <p class="polar-art-studio-is">
-            <a href="https://polarart.ca/" target="_blank" rel="noopener noreferrer"
-              ><span class="text-wrapper-7">Polar Art Studio</span></a
-            >
+            <a href="https://polarart.ca/" target="_blank" rel="noopener noreferrer"><span class="text-wrapper-7">Polar Art Studio</span></a>
             <span class="text-wrapper-8">
               is a pottery workshop and art studio located in Markham, ON. As the sole designer on the Polar Art Design
               Team, I created infographics, posters, class schedules, and marketing campaigns to establish the brand
-              identity and support the company&#39;s growth.</span
-            >
+              identity and support the company&#39;s growth.</span>
           </p>
           <img class="image-2" src="img/image-6.png" />
         </div>
@@ -726,46 +723,35 @@
           been printed and are prominently displayed in the studio.
         </p>
         <p class="for-our-mother">
-          <span class="text-wrapper-8"
-            >For our 2023 Mother&#39;s Day promotion, I collaborated with the marketing team at
+          <span class="text-wrapper-8">For our 2023 Mother&#39;s Day promotion, I collaborated with the marketing team at
           </span>
-          <a href="https://wfloral.com/" target="_blank" rel="noopener noreferrer"
-            ><span class="text-wrapper-7">W Floral</span></a
-          >
-          <span class="text-wrapper-8"
-            >, a flower studio specializing in crafting boutique floral arrangements for various occasions. Our goal was
+          <a href="https://wfloral.com/" target="_blank" rel="noopener noreferrer"><span class="text-wrapper-7">W Floral</span></a>
+          <span class="text-wrapper-8">, a flower studio specializing in crafting boutique floral arrangements for various occasions. Our goal was
             to create social media campaigns that would encourage potential customers to choose our pottery workshop
             over other studios. Through multi-channel marketing exposure, we successfully attracted first-time customers
-            and increased the returning rate of our existing customer base.</span
-          >
+            and increased the returning rate of our existing customer base.</span>
         </p>
         <p class="balancing-visual">
           <span class="text-wrapper-10">Balancing Visual Design with Message</span>
           <span class="text-wrapper-11"> Clarity<br /></span>
           <span class="text-wrapper-12">While captivating visuals are essential for grabbin</span>
-          <span class="text-wrapper-13"
-            >g users&#39; attention, they should not come at the expense of clarity. It&#39;s easy to get carried away
+          <span class="text-wrapper-13">g users&#39; attention, they should not come at the expense of clarity. It&#39;s easy to get carried away
             with design elements, but prioritizing message clarity helps maintain focus and prevents users from feeling
-            overwhelmed or distracted.<br /><br
-          /></span>
+            overwhelmed or distracted.<br /><br /></span>
           <span class="text-wrapper-10">Building the Habit of Asking “</span>
           <span class="text-wrapper-11">Why” Behind Every Element<br /></span>
           <span class="text-wrapper-12">One crucial lesson I’ve learned is that mar</span>
-          <span class="text-wrapper-13"
-            >keting design is not simply about making things look attractive — it’s about designing with a purpose. Each
+          <span class="text-wrapper-13">keting design is not simply about making things look attractive — it’s about designing with a purpose. Each
             element within a design should serve a specific function. To foster this mindset, it is a good habit to ask
             why each part of the design exists: Does it support the message? Is it essential? This approach not only
-            prevents clutter but also ensures each component guides the users toward the desired outcome.<br /><br
-          /></span>
+            prevents clutter but also ensures each component guides the users toward the desired outcome.<br /><br /></span>
           <span class="text-wrapper-10">Designing for the T</span>
           <span class="text-wrapper-11">arget Audience<br /></span>
           <span class="text-wrapper-12">Creating designs that reso</span>
-          <span class="text-wrapper-13"
-            >nate with the target audience is key to effective communication. When working on infographics for art
+          <span class="text-wrapper-13">nate with the target audience is key to effective communication. When working on infographics for art
             classes aimed at children, I tailored the visual style to be child-friendly, using themes and colours that
             convey warmth and approachability. This helped create a welcoming atmosphere that appeals to young learners,
-            making the content more relatable and engaging.</span
-          >
+            making the content more relatable and engaging.</span>
         </p>
         <img class="element" src="img/image.png" />
         <img class="element-2" src="img/2-1.png" />
